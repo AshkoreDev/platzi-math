@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./../images/calculator.svg" type="image/gif" sizes="20x20">
+  <title>Platzi Math | Estadística</title>
+  <link rel="stylesheet" href="./../css/style.css">
+</head>
+<body>
+  <header>
+    <navbar></navbar>
+  </header>
+
+  <main>
+    <section class="section__title">
+      <h2>Estadísticas</h2>
+      <p class="section__title--p">Taller #3 del curso práctico de JS, dónde se puede calcular el promedio, la moda y la mediana.</p>
+    </section>
+
+    <section class="container cards__container">
+
+      <article class="container__card">
+        <h3>Mediana, Moda y Promedio</h3>
+        <form action="#" class="card__form">
+          <label for="statisticsList" class="card__form--label">Escribe cada número de la lista:</label>
+          <input type="text" id="statisticsList" name="statisticsList" class="card__form--input">
+
+          <div class="form__buttons">
+            <button type="button" class="form__buttons--btn" id="addListBtn">Agregar</button>
+            <button type="button" class="form__buttons--btn" id="statisticsBtn">Calcular</button>
+          </div>
+        </form>
+        <p id="statisticsResult" class="card__result"></p>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <footerbar></footerbar>
+  </footer>
+
+  <script src="./../index.js" type="module"></script>
+</body>
+</html>

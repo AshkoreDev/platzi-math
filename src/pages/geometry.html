@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./../images/calculator.svg" type="image/gif" sizes="20x20">
+  <title>Platzi Math | Geometría</title>
+  <link rel="stylesheet" href="./../css/style.css">
+</head>
+<body>
+  <header>
+    <navbar></navbar>
+  </header>
+
+  <main>
+    <section class="section__title">
+      <h2>Figuras Geométricas</h2>
+      <p class="section__title--p">Taller #1 del curso práctico de JS, dónde se puede calcular el perímetro, el área y la altura de algunas formas
+      geométricas.</p>
+    </section>
+
+    <section class="container cards__container">
+
+      <article class="container__card">
+        <h3>Cuadrado</h3>
+        <form action="#" class="card__form">
+          <label for="squareSide" class="card__form--label">Escribe un lado del cuadrado:</label>
+          <input type="number" id="squareSide" name="squareSide" class="card__form--input">
+          <div class="form__buttons">
+            <button type="button" class="form__buttons--btn" id="squareBtn">Calcular</button>
+          </div>
+        </form>
+        <p id="squareResult" class="card__result"></p>
+      </article>
+
+      <article class="container__card">
+        <h3>Círculo</h3>
+        <form action="#" class="card__form">
+          <label for="circleRadius" class="card__form--label">Escribe el radio del círculo:</label>
+          <input type="number" id="circleRadius" name="circleRadius" class="card__form--input">
+          <div class="form__buttons">
+            <button type="button" class="form__buttons--btn" id="circleBtn">Calcular</button>
+          </div>
+        </form>
+        <p id="circleResult" class="card__result"></p>
+      </article>
+
+      <article class="container__card">
+        <h3>Triángulo</h3>
+        <form action="#" class="card__form">
+          <label for="triangleRightSide" class="card__form--label">Escribe el lado derecho del triángulo:</label>
+          <input type="number" id="triangleRightSide" name="triangleRightSide" class="card__form--input">
+
+          <label for="triangleLeftSide" class="card__form--label">Escribe el lado izquierdo del triángulo:</label>
+          <input type="number" id="triangleLeftSide" name="triangleLeftSide" class="card__form--input">
+
+          <label for="triangleBase" class="card__form--label">Escribe la base del triángulo:</label>
+          <input type="number" id="triangleBase" name="triangleBase" class="card__form--input">
+
+          <label for="triangleHeight" class="card__form--label">Escribe la altura del triángulo:</label>
+          <input type="number" id="triangleHeight" name="triangleHeight" class="card__form--input">
+          <div class="form__buttons">
+            <button type="button" class="form__buttons--btn" id="triangleBtn">Calcular</button>
+          </div>
+        </form>
+        <p id="triangleResult" class="card__result"></p>
+      </article>
+
+      <article class="container__card">
+        <h3>Triángulo Isósceles</h3>
+        <form action="#" class="card__form">
+          <label for="isTriangleRightSide" class="card__form--label">Escribe el lado derecho del triángulo:</label>
+          <input type="number" id="isTriangleRightSide" name="isTriangleRightSide" class="card__form--input">
+
+          <label for="isTriangleLeftSide" class="card__form--label">Escribe el lado izquierdo del triángulo:</label>
+          <input type="number" id="isTriangleLeftSide" name="isTriangleLeftSide" class="card__form--input">
+
+          <label for="isTriangleBase" class="card__form--label">Escribe la base del triángulo:</label>
+          <input type="number" id="isTriangleBase" name="isTriangleBase" class="card__form--input">
+          <div class="form__buttons">
+            <button type="button" class="form__buttons--btn" id="isTriangleBtn">Calcular</button>
+            <!-- <button type="button" class="form__buttons--btn">Área</button> -->
+          </div>
+        </form>
+        <p id="isTriangleResult" class="card__result"></p>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <footerbar></footerbar>
+  </footer>
+
+  <script src="./../index.js" type="module"></script>
+</body>
+</html>

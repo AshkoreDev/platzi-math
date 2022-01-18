@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./../images/calculator.svg" type="image/gif" sizes="20x20">
+  <title>Platzi Math | Salarios</title>
+  <link rel="stylesheet" href="./../css/style.css">
+</head>
+<body>
+  <header>
+    <navbar></navbar>
+  </header>
+
+  <main>
+    <section class="section__title">
+      <h2>Análisis Salarial</h2>
+      <p class="section__title--p">Taller #4 del curso práctico de JS, dónde se puede hacer un análisis salarial con el top 10%.</p>
+    </section>
+
+    <section class="container cards__container">
+
+      <article class="container__card">
+        <h3>Salarios</h3>
+        <form action="#" class="card__form">
+          <label for="salaryName" class="card__form--label">Escribe el nombre:</label>
+          <input type="text" id="salaryName" name="salaryName" class="card__form--input">
+
+          <label for="salary" class="card__form--label">Escribe el nombre:</label>
+          <input type="number" id="salary" name="salary" class="card__form--input">
+          <div class="form__buttons">
+            <button type="button" class="form__buttons--btn" id="addSalaryBtn">Agregar</button>
+            <button type="button" class="form__buttons--btn" id="salaryBtn">Calcular</button>
+          </div>
+        </form>
+        <p id="salaryResult" class="card__result"></p>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <footerbar></footerbar>
+  </footer>
+
+  <script src="./../index.js" type="module"></script>
+</body>
+</html>

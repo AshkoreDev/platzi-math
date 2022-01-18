@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./../images/calculator.svg" type="image/gif" sizes="20x20">
+  <title>Platzi Math | Descuentos</title>
+  <link rel="stylesheet" href="./../css/style.css">
+</head>
+<body>
+  <header>
+    <navbar></navbar>
+  </header>
+
+  <main>
+    <section class="section__title">
+      <h2>Descuentos</h2>
+      <p class="section__title--p">Taller #2 del curso práctico de JS, dónde se puede calcular el precio con descuentos de una tienda.</p>
+    </section>
+
+    <section class="container cards__container">
+
+      <article class="container__card">
+        <h3>Descuentos</h3>
+        <form action="#" class="card__form">
+          <label for="originalPrice" class="card__form--label">Escribe el precio original:</label>
+          <input type="text" id="originalPrice" name="originalPrice" class="card__form--input">
+
+          <label for="discount" class="card__form--label">Escribe el descuento:</label>
+          <input type="number" id="discount" name="discount" class="card__form--input">
+          <div class="form__buttons">
+            <button type="button" class="form__buttons--btn" id="discountBtn">Calcular</button>
+          </div>
+        </form>
+        <p id="discountResult" class="card__result"></p>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <footerbar></footerbar>
+  </footer>
+
+  <script src="./../index.js" type="module"></script>
+</body>
+</html>
