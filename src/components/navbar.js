@@ -40,13 +40,13 @@ class navbar extends HTMLElement {
             <a href="${this.geometry}" class="a__border">Geometría</a>
           </li>
           <li class="li__border">
-            <a href="${this.discounts}" class="a__border">Estadistica</a>
+            <a href="${this.discounts}" class="a__border">Descuentos</a>
           </li>
           <li class="li__border">
-            <a href="${this.salaries}" class="a__border">Descuentos</a>
+            <a href="${this.salaries}" class="a__border">Salarios</a>
           </li>
           <li>
-            <a href="${this.statistics}" class="a__border">Salarios</a>
+            <a href="${this.statistics}" class="a__border">Estadistica</a>
           </li>
         </ul>
       </nav>
