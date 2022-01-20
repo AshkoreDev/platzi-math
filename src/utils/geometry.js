@@ -19,7 +19,9 @@ function calculateSquare() {
   } else {
     const perimeter = squarePerimeter(side);
     const area = squareArea(side);
-    return squareResult.innerText = `Perímetro: ${perimeter} cm. Área: ${area} cm^2.`;
+    return squareResult.innerText =
+    `Perímetro: ${perimeter} cm.
+     Área: ${area} cm^2.`;
   }
 }
 
@@ -55,7 +57,9 @@ function calculateCircle() {
   } else {
     const perimeter = circlePerimeter(radius, Pi);
     const area = circleArea(radius, Pi);
-    return circleResult.innerText = `Perímetro: ${perimeter} cm. Área: ${area} cm^2.`;
+    return circleResult.innerText =
+    `Perímetro: ${perimeter} cm.
+     Área: ${area} cm^2.`;
   }
 }
 
@@ -91,7 +95,9 @@ function calculateTriangle() {
   } else {
     const perimeter = trianglePerimeter(rightSide, leftSide, base);
     const area = triangleArea(base, height);
-    return triangleResult.innerText = `Perímetro: ${perimeter} cm. Área: ${area} cm^2.`;
+    return triangleResult.innerText =
+    `Perímetro: ${perimeter} cm.
+     Área: ${area} cm^2.`;
   }
 }
 

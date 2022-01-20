@@ -19,7 +19,7 @@ function CalculatePriceWithDiscount() {
     return discountResult.innerText = `ERROR: El precio original y el descuento deben ser mayor a 0.`;
   } else {
     const priceDiscount = priceWithDiscount(price, discount);
-    return discountResult.innerText = `El precio con un descuento de ${discount}% es de: $ ${priceDiscount}.`;
+    return discountResult.innerText = `El precio con un descuento de ${discount}% es de: $${priceDiscount}.`;
   }
 }
 

@@ -41,6 +41,16 @@ main {
   grid-template-columns: repeat(12, 1fr);
 }
 
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 /* HOME */
 .home__container {
   gap: 20px;
@@ -169,6 +179,7 @@ h3 {
 .card__form {
   width: 100%;
   min-height: 150px;
+  padding: 10px;
 }
 
 .card__form--label {
@@ -205,4 +216,17 @@ h3 {
   font-size: 20px;
   letter-spacing: 1.5px;
   background: var(--secondary-color);
+}
+
+/* MEDIA QUERYS */
+@media (hover: hover) {
+  .home__card--btn:hover > .home__card--btn__front {
+    transform: translateY(-1px);
+    transition-duration: 600ms;
+  }
+
+  .form__buttons--btn:hover {
+    cursor: pointer;
+    background: var(--tertiary--color);
+  }
 }
