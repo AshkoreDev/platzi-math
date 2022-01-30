@@ -27,14 +27,14 @@ class footerBar extends HTMLElement {
     template.innerHTML = `
         <section class="footer__container">
           <article class="footer__info">
-          <a title="Linkedin" href="https://www.linkedin.com/in/AshkoreDev/" target="_blank">
-            <img src="https://img.icons8.com/ios-filled/50/FFFFFF/linkedin.png" class="footer__info--icon" alt="Logo Linkedin"/>
+          <a title="Linkedin" href="https://www.linkedin.com/in/AshkoreDev/" target="_blank" rel="noopener">
+            <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" class="footer__info--icon" alt="Logo Linkedin"/>
           </a>
-          <a title="GitHub" href="https://github.com/AshkoreDev" target="_blank">
-            <img src="https://img.icons8.com/ios-filled/50/FFFFFF/github.png" class="footer__info--icon" alt="Logo GitHub"/>
+          <a title="GitHub" href="https://github.com/AshkoreDev" target="_blank" rel="noopener">
+            <img src="https://img.icons8.com/ios-filled/50/000000/github.png" class="footer__info--icon" alt="Logo GitHub"/>
           </a>
-          <a title="Twitter" href="https://twitter.com/AshkoreDev" target="_blank">
-            <img src="https://img.icons8.com/ios-glyphs/50/FFFFFF/twitter--v1.png" class="footer__info--icon" alt="Logo Twitter"/>
+          <a title="Twitter" href="https://twitter.com/AshkoreDev" target="_blank" rel="noopener">
+            <img src="https://img.icons8.com/ios-glyphs/50/000000/twitter--v1.png" class="footer__info--icon" alt="Logo Twitter"/>
           </a>
           </article>
           <p class="footer__info">Aracely Alba @AshkoreDev | &copy; 2022</p>
@@ -56,7 +56,7 @@ class footerBar extends HTMLElement {
       .footer__container {
         padding: 10px 0;
         text-align: center;
-        color: white;
+        color: #000000;
         background-color: var(--secondary-color);
       }
 
@@ -80,7 +80,7 @@ class footerBar extends HTMLElement {
 
       @media (hover: hover)  {
         a:hover {
-          border-color: #FFFFFF;
+          border-color: #000000;
         }
       }
 

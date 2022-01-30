@@ -36,6 +36,7 @@ a {
 }
 
 main {
+  min-height: calc(100vh - 166px);
   padding: 40px 10px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
