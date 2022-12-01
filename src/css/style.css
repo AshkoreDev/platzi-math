@@ -20,10 +20,12 @@ a {
 }
 
 main {
-  min-height: calc(100vh - 166px);
-  padding: 10px;
+  /*min-height: calc(100vh - 166px);*/
+  min-height: 100vh;
+  padding: 20px 10px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  /*background-color: green;*/
 }
 
 /*SECTION*/
@@ -50,6 +52,8 @@ main {
 /*HOME*/
 .homeContainer {
   gap: 20px;
+	/*padding-top: 20px;*/
+  /*background-color: yellow;*/
 }
 
 .home__card__figure {
@@ -90,7 +94,7 @@ main {
 
 /*CARDS*/
 .container {
-  margin: 50px auto;
+  margin: 60px auto;
   grid-column: 1 / 13;
   display: flex;
   flex-wrap: wrap;
