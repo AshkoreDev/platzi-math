@@ -1,0 +1,45 @@
+:root {
+  /* Colors */
+  --primary-color: #303952;
+  --secondary-color: #f33535;
+  --tertiary--color: #fd5959;
+
+  /* Fonts */
+  --font-title: "Oregano", cursive;
+  --font-text: "Abhaya Libre", serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+main {
+  min-height: calc(100vh - 166px);
+  padding: 40px 10px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/*SECTION*/
+.section__titleContainer {
+	grid-column: 1 / 13;
+}
+
+.section__titleContainer--title {
+	font-family: var(--font-title);
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 5px;
+  /*color: white;*/
+}
+
+.section__titleContainer--subTitle {
+	margin: 0 auto;
+  font-family: var(--font-text);
+  font-size: 1.25rem;
+  text-align: center;
+  /*color: white;*/
+}
+
