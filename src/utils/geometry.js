@@ -55,8 +55,8 @@ function calculateCircle() {
 
   } else {
 
-    const perimeter = circlePerimeter(radius, Math.PI);
-    const area = circleArea(radius, Math.PI);
+    const perimeter = circlePerimeter(radius, Math.PI).toFixed(2);
+    const area = circleArea(radius, Math.PI).toFixed(2);
 
     return circleResult.textContent =
     `Perímetro: ${perimeter} cm.
