@@ -64,6 +64,40 @@ function calculateCircle() {
   }
 }
 
+// TRIANGLE
+
+function trianglePerimeter(rightSide, leftSide, base) {
+
+  return rightSide + leftSide + base;
+}
+
+function triangleArea(base, height) {
+
+  return (base * height) / 2;
+}
+
+function calculateTriangle() {
+
+  const rightSide = parseInt(triangleRightSide.value);
+  const leftSide = parseInt(triangleLeftSide.value);
+  const base = parseInt(triangleBase.value);
+  const height = parseInt(triangleHeight.value);
+
+  if(rightSide == 0 || leftSide == 0 || base == 0 || isNaN(rightSide) || isNaN(leftSide) || isNaN(base)) {
+
+    return triangleResult.textContent = `ERROR: Los datos del Tríangulo deben ser mayor a 0.`;
+
+  } else {
+
+    const perimeter = trianglePerimeter(rightSide, leftSide, base);
+    const area = triangleArea(base, height);
+
+    return triangleResult.textContent =
+    `Perímetro: ${perimeter} cm.
+     Área: ${area} cm^2.`;
+  }
+}
 
 squareBtn.addEventListener('click', calculateSquare);
 circleBtn.addEventListener('click', calculateCircle);
+triangleBtn.addEventListener('click', calculateTriangle);
