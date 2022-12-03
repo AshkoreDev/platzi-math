@@ -16,6 +16,7 @@
 		</section>
 
 		<section class="container cards__container">
+
 			<article class="container__card">
         <h3>Cuadrado</h3>
         <form action="#" class="card__form">
@@ -27,8 +28,22 @@
         </form>
         <p id="squareResult" class="form__result"></p>
       </article>
+
+       <article class="container__card">
+        <h3>Círculo</h3>
+        <form action="#" class="card__form">
+          <label for="circleRadius" class="card__form--label">Escribe el radio del círculo:</label>
+          <input type="number" id="circleRadius" name="circleRadius" class="card__form--input">
+          <div class="form__buttons">
+            <button type="button" class="form__buttons--btn" id="circleBtn">Calcular</button>
+          </div>
+        </form>
+        <p id="circleResult" class="form__result"></p>
+      </article>
+
 		</section>
 	</main>
+	
 	<script src="./../index.js" type="module"></script>
 </body>
 </html>
