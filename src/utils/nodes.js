@@ -13,3 +13,5 @@ const triangleBase = document.getElementById('triangleBase');
 const triangleHeight = document.getElementById('triangleHeight');
 const triangleBtn = document.getElementById('triangleBtn');
 const triangleResult = document.getElementById('triangleResult');
+
+// Discounts

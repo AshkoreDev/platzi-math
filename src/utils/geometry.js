@@ -98,6 +98,9 @@ function calculateTriangle() {
   }
 }
 
-squareBtn.addEventListener('click', calculateSquare);
-circleBtn.addEventListener('click', calculateCircle);
-triangleBtn.addEventListener('click', calculateTriangle);
+// if (squareBtn && circleBtn && triangleBtn) {
+  
+//   squareBtn.addEventListener('click', calculateSquare);
+//   circleBtn.addEventListener('click', calculateCircle);
+//   triangleBtn.addEventListener('click', calculateTriangle);
+// }
