@@ -30,8 +30,8 @@ a {
 
 main {
   /*min-height: calc(100vh - 166px);*/
-  min-height: 100vh;
-  padding: 20px 10px;
+  /*min-height: 100vh;*/
+  /*padding: 20px 10px;*/
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   /*background-color: green;*/
@@ -39,19 +39,22 @@ main {
 
 /*SECTION*/
 .titleContainer {
+  margin: 20px 0;
+  max-height: 100px;
 	grid-column: 1 / 13;
+  /*background-color: green;*/
 }
 
 .titleContainer--title {
 	font-family: var(--font-title);
- font-size: var(--font-lg);
+  font-size: var(--font-lg);
   text-align: center;
   letter-spacing: 5px;
   /*color: white;*/
 }
 
 .titleContainer--subTitle {
-	margin: 10px auto 0;
+	margin-top: 20px;
   font-family: var(--font-text);
   font-size: var(--font-md);
   text-align: center;
@@ -61,7 +64,7 @@ main {
 /*HOME*/
 .homeContainer {
   gap: 20px;
-	/*padding-top: 20px;*/
+	padding: 40px 0;
   /*background-color: yellow;*/
 }
 
@@ -103,11 +106,12 @@ main {
 
 /*CARDS*/
 .container {
-  margin: 60px auto;
+  /*padding: 10px 0;*/
   grid-column: 1 / 13;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  /*background-color: black;*/
 }
 
 .cards__container {
