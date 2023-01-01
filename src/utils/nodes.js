@@ -15,3 +15,7 @@ const triangleBtn = document.getElementById('triangleBtn');
 const triangleResult = document.getElementById('triangleResult');
 
 // Discounts
+const originalPrice = document.getElementById('originalPrice');
+const discounts = document.getElementById('discount');
+const discountResult = document.getElementById('discountResult');
+const discountBtn = document.getElementById('discountBtn');
