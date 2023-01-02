@@ -54,10 +54,27 @@ function medianC(list) {
     return median;
 
   } else {
-  	
+
     median = list[mediumList];
     return median;
   }
+}
+
+// MODA
+const countList = {};
+
+function modaC() {
+
+  listTotal.map((element) => {
+
+    (countList[element])
+      ? countList[element] += 1
+      : countList[element] = 1;
+  });
+
+  const listArray = Object.entries(countList).sort((acumulado, actual) => acumulado[1] - actual[1]);
+  
+  return listArray[listArray.length - 1];
 }
 
 if(addListBtn) {
