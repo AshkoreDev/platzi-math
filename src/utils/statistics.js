@@ -15,6 +15,20 @@ function addData() {
   }
 }
 
+// AVERAGE
+function arithmeticAverage(list) {
+
+  const addition = list.reduce(
+
+    function(accumulator = 0, currentValue) {
+
+      return accumulator + currentValue;
+    }
+  );
+
+  return addition / list.length;
+}
+
 if(addListBtn) {
   addListBtn.addEventListener('click', addData);
 }
