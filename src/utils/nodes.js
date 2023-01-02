@@ -19,3 +19,9 @@ const originalPrice = document.getElementById('originalPrice');
 const discounts = document.getElementById('discount');
 const discountResult = document.getElementById('discountResult');
 const discountBtn = document.getElementById('discountBtn');
+
+// Statistics
+const statisticsList = document.getElementById('statisticsList');
+const addListBtn = document.getElementById('addListBtn');
+const statisticsBtn = document.getElementById('statisticsBtn');
+const statisticsResult = document.getElementById('statisticsResult');
