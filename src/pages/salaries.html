@@ -15,7 +15,25 @@
 			<p class="titleContainer--subTitle">Taller #2 para calcular diferentes tipos de salarios.</p>
 		</section>
 
-		<section class="container cards__container">></section>
+		<section class="container cards__container">
+
+			<article class="container__card">
+        <h3>Salarios</h3>
+        <form action="#" class="card__form">
+          <label for="salaryName" class="card__form--label">Escribe el nombre:</label>
+          <input type="text" id="salaryName" name="salaryName" class="card__form--input">
+
+          <label for="salary" class="card__form--label">Escribe el salario:</label>
+          <input type="number" id="salary" name="salary" class="card__form--input">
+          <div class="form__buttons">
+            <button type="button" class="form__buttons--btn" id="addSalaryBtn">Agregar</button>
+            <button type="button" class="form__buttons--btn" id="salaryBtn">Calcular</button>
+          </div>
+        </form>
+        <p id="salaryResult" class="card__result"></p>
+      </article>
+      
+		</section>
 	</main>
 
 	<script src="./../index.js" type="module"></script>
