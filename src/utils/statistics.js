@@ -80,3 +80,5 @@ function modaC() {
 if(addListBtn) {
   addListBtn.addEventListener('click', addData);
 }
+
+export { arithmeticAverage, pair };

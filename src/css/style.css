@@ -210,3 +210,8 @@ input::-webkit-inner-spin-button {
   color: #000;
   border: 1px solid var(--primary-color);
 }
+
+/*footer {
+  margin-top: 300px;
+  background-color: red;
+}*/
