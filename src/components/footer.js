@@ -5,23 +5,6 @@ class footerBar extends HTMLElement {
     this.attachShadow({ mode: 'open' });
   }
 
-  // static get observedAttributes() {
-  //   return ['twitter', 'linkedin', 'github'];
-
-  // }
-
-  // attributeChangedCallback(attr, oldVal, newVal) {
-  //   if(attr === 'twitter' && oldVal !== newVal) {
-  //     this.twitter = newVal
-  //   }
-  //   if(attr === 'linkedin' && oldVal !== newVal) {
-  //     this.linkedin = newVal
-  //   }
-  //   if(attr === 'github' && oldVal !== newVal) {
-  //     this.github = newVal
-  //   }
-  // }
-
   getTemplate() {
     const template = document.createElement('template');
     template.innerHTML = `
