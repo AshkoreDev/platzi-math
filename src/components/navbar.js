@@ -103,11 +103,11 @@ class navbar extends HTMLElement {
 
       .a__border {
         padding-bottom: 5px;
-        text-decoration: none;
-        font-family: var(--font-title);
-        font-size: var(--font-sm);
-        letter-spacing: 2px;
         color: white;
+        text-decoration: none;
+        letter-spacing: 2px;
+        font-size: var(--font-sm);
+        font-family: var(--font-title);
         border-bottom: 1px solid transparent;
       }
 
@@ -121,11 +121,9 @@ class navbar extends HTMLElement {
         nav {
           justify-content: space-between;
         }
-
         img {
           margin-left: 40px;
         }
-
         ul {
           width: 600px;
         }
@@ -135,7 +133,6 @@ class navbar extends HTMLElement {
         img {
           margin-left: 80px;
         }
-
         ul {
           margin-right: 40px;
         }
