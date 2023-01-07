@@ -105,7 +105,7 @@ class navbar extends HTMLElement {
         padding-bottom: 5px;
         text-decoration: none;
         font-family: var(--font-title);
-        font-size: 1.2rem;
+        font-size: var(--font-sm);
         letter-spacing: 2px;
         color: white;
         border-bottom: 1px solid transparent;
@@ -127,7 +127,7 @@ class navbar extends HTMLElement {
         }
 
         ul {
-          width: 550px;
+          width: 600px;
         }
       }
 
@@ -151,7 +151,7 @@ class navbar extends HTMLElement {
   }
 
   connectedCallback() {
-    
+
     this.render();
   }
 }
