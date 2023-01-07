@@ -24,6 +24,10 @@
 	box-sizing: border-box;
 }
 
+body {
+  background-color: var(--primary-color);
+}
+
 body::-webkit-scrollbar {
   width: 3px;
   overflow: hidden;
