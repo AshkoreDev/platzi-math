@@ -1,4 +1,8 @@
 // SQUARE
+const squareSide = document.getElementById('squareSide');
+const squareBtn = document.getElementById('squareBtn');
+const squareResult = document.getElementById('squareResult');
+
 function squarePerimeter(side) {
 
   return side * 4;
@@ -15,20 +19,24 @@ function calculateSquare() {
 
   if(side == 0 || isNaN(side)) {
 
-    return squareResult.textContent = `ERROR: El lado del cuadrado debe ser mayor a 0.`;
+    return squareResult.innerText = `ERROR: El lado del cuadrado debe ser mayor a 0.`;
 
   } else {
 
     const perimeter = squarePerimeter(side);
     const area = squareArea(side);
 
-    return squareResult.textContent =
-    `Perímetro: ${perimeter} cm.
-     Área: ${area} cm^2.`;
+    return squareResult.innerText =
+    `Perímetro: ${perimeter}cm
+      Area: ${area}cm^2.`;
   }
 }
 
 // CIRCLE
+const circleRadius = document.getElementById('circleRadius');
+const circleBtn = document.getElementById('circleBtn');
+const circleResult = document.getElementById('circleResult');
+
 function circleDiameter(radius) {
 
   return radius * 2;
@@ -51,20 +59,26 @@ function calculateCircle() {
 
   if(radius == 0 || isNaN(radius)) {
 
-    return circleResult.textContent = `ERROR: El radio del círculo debe ser mayor a 0.`;
+    return circleResult.innerText = `ERROR: El radio del círculo debe ser mayor a 0.`;
 
   } else {
 
     const perimeter = circlePerimeter(radius, Math.PI).toFixed(2);
     const area = circleArea(radius, Math.PI).toFixed(2);
 
-    return circleResult.textContent =
+    return circleResult.innerText =
     `Perímetro: ${perimeter} cm.
      Área: ${area} cm^2.`;
   }
 }
 
 // TRIANGLE
+const triangleRightSide = document.getElementById('triangleRightSide');
+const triangleLeftSide = document.getElementById('triangleLeftSide');
+const triangleBase = document.getElementById('triangleBase');
+const triangleHeight = document.getElementById('triangleHeight');
+const triangleBtn = document.getElementById('triangleBtn');
+const triangleResult = document.getElementById('triangleResult');
 
 function trianglePerimeter(rightSide, leftSide, base) {
 
@@ -85,14 +99,14 @@ function calculateTriangle() {
 
   if(rightSide == 0 || leftSide == 0 || base == 0 || isNaN(rightSide) || isNaN(leftSide) || isNaN(base)) {
 
-    return triangleResult.textContent = `ERROR: Los datos del Tríangulo deben ser mayor a 0.`;
+    return triangleResult.innerText = `ERROR: Los datos del Tríangulo deben ser mayor a 0.`;
 
   } else {
 
     const perimeter = trianglePerimeter(rightSide, leftSide, base);
     const area = triangleArea(base, height);
 
-    return triangleResult.textContent =
+    return triangleResult.innerText =
     `Perímetro: ${perimeter} cm.
      Área: ${area} cm^2.`;
   }
