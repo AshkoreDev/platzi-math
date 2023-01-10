@@ -13,15 +13,17 @@ function addData() {
   if(salaryName.value != "" && (salary.value != "" || salary >= 0)) {
 
     salariesTotal.push({
-    name: salaryName.value,
-    salary: parseInt(salary.value)
+      name: salaryName.value,
+      salary: parseInt(salary.value)
     });
 
     document.getElementById("salaryName").value = "";
     document.getElementById("salary").value = "";
 
     return salaryResult.innerText = `Datos agregados.`;
+
   } else {
+
     return salaryResult.innerText = `ERROR: Debe ingresar los datos necesarios.`;
   }
 }
@@ -49,17 +51,17 @@ function calculateSalary() {
 
     if(pair(salariesTotalOrden.length) && pair(salaryTop10.length)) {
 
-    const middlePerson1 = salariesTotalOrden[middle - 1];
-    const middlePerson2 = salariesTotalOrden[middle];
+      const middlePerson1 = salariesTotalOrden[middle - 1];
+      const middlePerson2 = salariesTotalOrden[middle];
 
-    const middleTop1 = salaryTop10[top - 1];
-    const middleTop2= salaryTop10[top];
+      const middleTop1 = salaryTop10[top - 1];
+      const middleTop2= salaryTop10[top];
 
-    const top10 = arithmeticAverage([middleTop1, middleTop2]);
-    const median = arithmeticAverage([middlePerson1, middlePerson2]);
-    return salaryResult.innerText =
-    `La mediana salarial es: ${median}.
-     El top 10% es: ${top10}.`;
+      const top10 = arithmeticAverage([middleTop1, middleTop2]);
+      const median = arithmeticAverage([middlePerson1, middlePerson2]);
+      return salaryResult.innerText =
+      `La mediana salarial es: ${median}.
+       El top 10% es: ${top10}.`;
 
     } else {
 
@@ -73,8 +75,8 @@ function calculateSalary() {
 }
 
 
-
 if(addSalaryBtn || salaryBtn) {
+
   addSalaryBtn.addEventListener('click', addData);
   salaryBtn.addEventListener('click', calculateSalary);
 }
