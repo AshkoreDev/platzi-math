@@ -9,10 +9,7 @@
 
 
 // Statistics
-const statisticsList = document.getElementById('statisticsList');
-const addListBtn = document.getElementById('addListBtn');
-const statisticsBtn = document.getElementById('statisticsBtn');
-const statisticsResult = document.getElementById('statisticsResult');
+
 
 // Salaries
 const salaryName = document.getElementById('salaryName');
