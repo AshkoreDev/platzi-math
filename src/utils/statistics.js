@@ -82,8 +82,31 @@ function modaC() {
   return listArray[listArray.length - 1];
 }
 
-if(addListBtn) {
+// RESULTS
+function calculateStatistics() {
+
+  const list = Object.values(listTotal);
+
+  if(list !="") {
+
+    const average = arithmeticAverage(list);
+    const median = medianC(list);
+    const moda = modaC(list);
+
+    return statisticsResult.innerText =
+    `Promedio: ${average}.
+     Mediana: ${median}.
+     Moda: ${moda}.`
+
+  } else {
+
+    return statisticsResult.innerText = `ERROR: Debe ingresar los datos necesarios.`;
+  }
+}
+
+if(addListBtn || statisticsBtn) {
   addListBtn.addEventListener('click', addData);
+  statisticsBtn.addEventListener('click', calculateStatistics);
 }
 
 export { arithmeticAverage, pair };
