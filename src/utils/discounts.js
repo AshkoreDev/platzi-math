@@ -1,4 +1,7 @@
-
+const originalPrice = document.getElementById('originalPrice');
+const discounts = document.getElementById('discount');
+const discountResult = document.getElementById('discountResult');
+const discountBtn = document.getElementById('discountBtn');
 
 function priceWithDiscount(price, discount) {
 
