@@ -4,7 +4,7 @@ const discountBtn = document.getElementById('discountBtn');
 const discountResult = document.getElementById('discountResult');
 
 const originalPriceC = document.getElementById('originalPriceC');
-const coupon = document.getElementById('coupon');
+const coupons = document.getElementById('coupons');
 const couponBtn = document.getElementById('couponBtn');
 const couponResult = document.getElementById('couponResult');
 
@@ -46,13 +46,42 @@ const couponList = [
 
 function calculatePriceWithCoupon() {
 
-  const priceC = Number(originalPriceC.value);
-  const newCoupon = coupon.value;
+  console.log(coupons.value);
+  console.log(originalPriceC.value);
+  const priceC = parseInt(originalPriceC.value);
+  const newCoupon = coupons.value;
   let discountCoupon = 0;
+
+  if (!priceC || newCoupon == '') {
+
+    couponResult.innerText = `Debes ingresar los datos requeridos.`;
+
+  } else {
+
+    couponList.forEach(item => {
+
+      if (newCoupon == item.coupon) {
+        
+        discountCoupon = item.discount;
+      }
+    });
+
+    if (discountCoupon == 0) {
+
+      couponResult.innerText = `El cupón no es valido.`;
+
+    } else {
+
+      const totalPriceCoupon = (priceC * (100 - discountCoupon)) / 100;
+
+      couponResult.innerText = `El precio con el cupón ${newCoupon} es de $${totalPriceCoupon}.`;
+    }
+  }
 
 }
 
-if(discountBtn) {
+if(discountBtn || couponBtn) {
 
   discountBtn.addEventListener('click', calculatePriceWithDiscount);
+  couponBtn.addEventListener('click', calculatePriceWithCoupon);
 }
