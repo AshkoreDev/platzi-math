@@ -15,7 +15,7 @@ function priceWithDiscount(price, discount) {
   return (price * percentPriceWithDiscount) / 100;
 }
 
-function CalculatePriceWithDiscount() {
+function calculatePriceWithDiscount() {
 
   const price = parseInt(originalPriceD.value);
   const discount = parseInt(discounts.value);
@@ -32,8 +32,12 @@ function CalculatePriceWithDiscount() {
 }
 
 // COUPONS
+function calculatePriceWithCoupon() {
+
+  
+}
 
 if(discountBtn) {
 
-  discountBtn.addEventListener('click', CalculatePriceWithDiscount);
+  discountBtn.addEventListener('click', calculatePriceWithDiscount);
 }
