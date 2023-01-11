@@ -4,23 +4,23 @@ const discountBtn = document.getElementById('discountBtn');
 const discountResult = document.getElementById('discountResult');
 
 const originalPriceC = document.getElementById('originalPriceC');
-const coupons = document.getElementById('coupon');
+const coupon = document.getElementById('coupon');
 const couponBtn = document.getElementById('couponBtn');
 const couponResult = document.getElementById('couponResult');
 
 // DISCOUNTS
-function priceWithDiscount(price, discount) {
+function priceWithDiscount(priceD, discount) {
 
   const percentPriceWithDiscount = 100 - discount;
-  return (price * percentPriceWithDiscount) / 100;
+  return (priceD * percentPriceWithDiscount) / 100;
 }
 
 function calculatePriceWithDiscount() {
 
-  const price = parseInt(originalPriceD.value);
+  const priceD = parseInt(originalPriceD.value);
   const discount = parseInt(discounts.value);
 
-  if(price == 0 || discount == 0 || isNaN(price) || isNaN(discount)) {
+  if(priceD == 0 || discount == 0 || isNaN(priceD) || isNaN(discount)) {
 
     return discountResult.innerText = `ERROR: El precio original y el descuento deben ser mayor a 0.`;
 
@@ -30,7 +30,7 @@ function calculatePriceWithDiscount() {
 
   } else {
 
-    const priceDiscount = priceWithDiscount(price, discount);
+    const priceDiscount = priceWithDiscount(priceD, discount);
     return discountResult.innerText = `El precio con un descuento de ${discount}% es de: $${priceDiscount}.`;
   }
 }
@@ -43,8 +43,12 @@ const couponList = [
   { coupon: 'DORADO', discount: 50 }
 ];
 
+
 function calculatePriceWithCoupon() {
 
+  const priceC = Number(originalPriceC.value);
+  const newCoupon = coupon.value;
+  let discountCoupon = 0;
 
 }
 
