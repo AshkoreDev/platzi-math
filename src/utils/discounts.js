@@ -24,6 +24,10 @@ function calculatePriceWithDiscount() {
 
     return discountResult.innerText = `ERROR: El precio original y el descuento deben ser mayor a 0.`;
 
+  } else if (discount >= 100) {
+    
+    discountResult.innerText = `El descuento no puede ser mayor o igual a 100.`;
+
   } else {
 
     const priceDiscount = priceWithDiscount(price, discount);
@@ -31,10 +35,17 @@ function calculatePriceWithDiscount() {
   }
 }
 
+
 // COUPONS
+const couponList = [
+  { coupon: 'BASICO', discount: 15 },
+  { coupon: 'PLATINO', discount: 30 },
+  { coupon: 'DORADO', discount: 50 }
+];
+
 function calculatePriceWithCoupon() {
 
-  
+
 }
 
 if(discountBtn) {
