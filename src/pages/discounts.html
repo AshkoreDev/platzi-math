@@ -24,16 +24,33 @@
       <article class="container__card">
         <h3>Descuentos</h3>
         <form action="#" class="card__form">
-          <label for="originalPrice" class="card__form--label">Escribe el precio original:</label>
-          <input type="text" id="originalPrice" name="originalPrice" class="card__form--input">
+          <label for="originalPriceD" class="card__form--label">Escribe el precio original:</label>
+          <input type="text" id="originalPriceD" name="originalPriceD" class="card__form--input">
 
           <label for="discount" class="card__form--label">Escribe el descuento:</label>
           <input type="number" id="discount" name="discount" class="card__form--input">
+
           <div class="form__buttons">
             <button type="button" class="form__buttons--btn" id="discountBtn">Calcular</button>
           </div>
         </form>
         <p id="discountResult" class="form__result"></p>
+      </article>
+
+      <article class="container__card">
+        <h3>Cupónes</h3>
+        <form action="#" class="card__form">
+          <label for="originalPriceC" class="card__form--label">Escribe el precio original:</label>
+          <input type="text" id="originalPriceC" name="originalPriceC" class="card__form--input">
+
+          <label for="coupons" class="card__form--label">Escribe el cupón:</label>
+          <input type="number" id="coupons" name="coupons" class="card__form--input">
+
+          <div class="form__buttons">
+            <button type="button" class="form__buttons--btn" id="couponBtn">Calcular</button>
+          </div>
+        </form>
+        <p id="couponResult" class="form__result"></p>
       </article>
 
     </section>

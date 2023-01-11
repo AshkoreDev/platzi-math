@@ -1,8 +1,14 @@
-const originalPrice = document.getElementById('originalPrice');
+const originalPriceD = document.getElementById('originalPriceD');
 const discounts = document.getElementById('discount');
-const discountResult = document.getElementById('discountResult');
 const discountBtn = document.getElementById('discountBtn');
+const discountResult = document.getElementById('discountResult');
 
+const originalPriceC = document.getElementById('originalPriceC');
+const coupons = document.getElementById('coupon');
+const couponBtn = document.getElementById('couponBtn');
+const couponResult = document.getElementById('couponResult');
+
+// DISCOUNTS
 function priceWithDiscount(price, discount) {
 
   const percentPriceWithDiscount = 100 - discount;
@@ -11,7 +17,7 @@ function priceWithDiscount(price, discount) {
 
 function CalculatePriceWithDiscount() {
 
-  const price = parseInt(originalPrice.value);
+  const price = parseInt(originalPriceD.value);
   const discount = parseInt(discounts.value);
 
   if(price == 0 || discount == 0 || isNaN(price) || isNaN(discount)) {
@@ -24,6 +30,8 @@ function CalculatePriceWithDiscount() {
     return discountResult.innerText = `El precio con un descuento de ${discount}% es de: $${priceDiscount}.`;
   }
 }
+
+// COUPONS
 
 if(discountBtn) {
 

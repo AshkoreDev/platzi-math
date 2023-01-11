@@ -1,4 +1,3 @@
-import './utils/nodes.js';
 import './components/navbar.js';
 import './components/footer.js';
 
