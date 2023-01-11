@@ -46,10 +46,8 @@ const couponList = [
 
 function calculatePriceWithCoupon() {
 
-  console.log(coupons.value);
-  console.log(originalPriceC.value);
   const priceC = parseInt(originalPriceC.value);
-  const newCoupon = coupons.value;
+  const newCoupon = coupons.value.toUpperCase() ;
   let discountCoupon = 0;
 
   if (!priceC || newCoupon == '') {
