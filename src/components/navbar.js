@@ -35,7 +35,7 @@ class navbar extends HTMLElement {
     template.innerHTML = `
       <nav>
         <a href="./../../index.html">
-          <img src="https://img.icons8.com/fluency/48/000000/healthy-food-calories-calculator.png" alt="Logo de símbolos matemáticos" width="50px" height="50px">
+          <img src="https://img.icons8.com/fluency/50/000000/healthy-food-calories-calculator.png" alt="Logo de símbolos matemáticos" width="50px" height="50px">
         </a>
 
         <ul>
